@@ -83,7 +83,44 @@ getLowerCase(str_val);
 */
 
 // 11.) concat() Example
+/*
 function getConcatValue(str){
   console.log(str.concat(" this year"));
 }
 getConcatValue(str_val);
+*/
+
+// 12.) trim() Example
+/*
+function getTrimValue(str){
+console.log(str.trim());
+}
+
+getTrimValue("     Rohit Bhardwaj       ");
+*/
+
+// 13.) trimStart() Example
+/*
+function getTrimStartValue(str){
+  console.log(str.trimStart());
+}
+getTrimStartValue("     Rohit Bhardwaj");
+*/
+
+// 14.) trimEnd() Example
+/*
+function getTrimEndValue(str){
+  console.log(str.trimEnd());
+}
+
+getTrimEndValue("Rohit Bhardwaj            ");
+*/
+
+// 15.) pad() example
+/*
+function getPaddValue(str){
+  console.log(str.padStart("9", "Soul "));
+}
+
+getPaddValue("Mate");
+*/
