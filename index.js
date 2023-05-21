@@ -2,6 +2,8 @@
 // let str_val = "Welcome Geeks to GeeksForGeeks";
 // console.log(str_val);
 
+const { join } = require("path");
+
 //1.) length() Example
 /*
 function getLength(str){
@@ -307,9 +309,72 @@ console.log(courses);
 // ---------------------------------------------------------------
 // includes
 // arr.includes(any)
+/*
 const availableSize = ["S", "M", "L", "XL", "XXL", "XXXL"];
 const readlineSync = require("readline-sync");
 const userSize = readlineSync.question("Which size of shirt do you want (S/M/L/XL/XXL/XXXL) - ");
 
 const isSizeAvailable = availableSize.includes(userSize);
-console.log(isSizeAvailable);
+// console.log(isSizeAvailable);
+if(isSizeAvailable){
+  console.log("Size is available");
+}
+else{
+  console.log("Size is unavailable");
+}
+*/
+
+// ------------------------------------------------------------------------
+// Array- Sort
+// const fruits  = ["Apple", "Cherry", "Orange", "Banana", "Berries"];
+// fruits.sort();
+// console.log(fruits);
+
+// const numbers = [1, 2, 4, 7, 9, 6, 5, 3, 8];
+// function inAscendingOrder(a, b){
+//   return a-b;
+// }
+// numbers.sort(inAscendingOrder);
+// console.log(numbers
+
+// function inDescendingOrder(a, b){
+//   return b-a;
+// }
+// numbers.sort(inDescendingOrder);
+// console.log(numbers);
+
+// ---------------------------------------------------------------------------
+
+// Array - Split & join
+
+//Split Example
+// const inputStr = "madam may i come in";
+// const arrOfChar = inputStr.split(" ");
+// console.log(arrOfChar);
+
+//Join Example
+// const inputStr = "Rohit Bhardwaj";
+// const arrOfChar = inputStr.split("");
+// arrOfChar.reverse();
+// console.log(arrOfChar.join(""));
+
+// ----------------------------------------------------------------------------
+/*
+// Spread
+// ..arr
+const arr1 = [1, 2, 3, 4, 5];
+const arr2 = [6, 7, 8, 9];
+// console.log("Array: ", arr)
+// console.log(...arr);
+
+const arr3 = [...arr1, ...arr2, 10, 11];
+console.log(arr3);
+*/
+// ----------------------------------------------------------------------------------
+// # Destructuring Array
+
+const number = [1, 2, 3];
+const [a, b, c] = [1, 2, 3];
+console.log(a);
+console.log(b);
+console.log(c);
