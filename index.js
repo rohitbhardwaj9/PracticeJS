@@ -373,8 +373,14 @@ console.log(arr3);
 // ----------------------------------------------------------------------------------
 // # Destructuring Array
 
-const number = [1, 2, 3];
-const [a, b, c] = [1, 2, 3];
-console.log(a);
-console.log(b);
-console.log(c);
+// const number = [1, 2, 3];
+// const [a, b, c] = [1, 2, 3];
+// console.log(a);
+// console.log(b);
+// console.log(c);
+
+// const fname ="Rishi"
+// lname = "Raj"
+// console.log(`Hello ${fname}, Nice to meet you.`)
+
+// ===================================================================================
