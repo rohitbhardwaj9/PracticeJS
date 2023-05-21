@@ -231,3 +231,85 @@ arr5.push(5);
 console.log("Updated Arr4: "+ arr4);
 console.log("Updated Arr5: " + arr5);
 */
+
+// ----------------------------------------------------------------------
+
+// Array Methods - Push & Concat
+ // Mutable (Changed) Object OR Immutable (Not Changed)
+// Push Method
+/*
+let fruits = ["Apple", "Mango", "Banana"];
+console.log(fruits);
+fruits.push("Orange");
+console.log(fruits);
+fruits.push("Kiwi", "Berries", "Melons");
+console.log(fruits);
+*/
+
+// Concat Method
+// let arr1 = [1, 2, 3];
+// let arr2 = [4, 5, 6];
+
+// let arr3 = arr1.concat(arr2);
+
+// console.log(arr3);
+
+// ...................................
+/*
+let arr1 = [1, 2, 3];
+let arr2 = [4, 5, 6];
+let arr3 = [7, 8, 9];
+
+let arr4 = arr1.concat(arr2);
+let arr5 = arr1.concat(arr2, arr3);
+console.log(arr4);
+console.log(arr5);
+*/
+
+// ----------------------------------------------------------------------
+// Array Methods - Pop, Slice, Splice
+
+//Pop
+/*
+let course = ["HTML", "CSS", "JS", "ReactJS", "JQuery"];
+console.log(course);
+let removedItem = course.pop(); //It removes last indexed value/element
+console.log("Removed Item is: "+removedItem);
+console.log(course);
+*/
+
+// Slice
+/*
+let courses = ["HTML", "CSS", "JavaScript", "ReactJS", "Jquery"];
+
+let value = courses.slice(3, 4); //ll pick till 4 but not 4
+
+console.log(value);
+console.log(typeof value);
+
+// example
+let userName = "rohit bhardwaj";
+let firstUpperCaseChar = userName[0].toUpperCase();
+let capitalizeName = firstUpperCaseChar + userName.slice(1);
+console.log(capitalizeName);
+*/
+
+// Splice
+/*
+let courses = ["HTML", "CSS", "JS", "ReactJS", "Jquery", "Vue.js"];
+courses.splice(4, 2); //it will remove 2 indexed value after 4th index
+console.log(courses);
+
+courses.splice(3, 0, "Java"); //It will add "Java" after index 3 and do not remove anything
+console.log(courses);
+*/
+
+// ---------------------------------------------------------------
+// includes
+// arr.includes(any)
+const availableSize = ["S", "M", "L", "XL", "XXL", "XXXL"];
+const readlineSync = require("readline-sync");
+const userSize = readlineSync.question("Which size of shirt do you want (S/M/L/XL/XXL/XXXL) - ");
+
+const isSizeAvailable = availableSize.includes(userSize);
+console.log(isSizeAvailable);
