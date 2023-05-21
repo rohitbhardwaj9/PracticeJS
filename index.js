@@ -1,5 +1,5 @@
 // console.log("Hello");
-let str_val = "Welcome Geeks to GeeksForGeeks";
+// let str_val = "Welcome Geeks to GeeksForGeeks";
 // console.log(str_val);
 
 //1.) length() Example
@@ -123,4 +123,111 @@ function getPaddValue(str){
 }
 
 getPaddValue("Mate");
+*/
+
+// 16.) padEnd() Example
+/*
+function getPadEnd(str){
+  console.log(str.padEnd("9", "Mate"));
+}
+getPadEnd("Soul ");
+*/
+
+// 17.) charAt() Example
+/*
+function getCharAt(str){
+  console.log(str.charAt(2));
+}
+getCharAt(str_val);
+*/
+
+// 18.) charCodeAt() Example
+/*
+function getCharCodeAt(str){
+  console.log(str.charCodeAt(2));
+}
+getCharCodeAt(str_val);
+*/
+
+// 19.) Split() Example
+/*
+function getSplit(str){
+  console.log(str.split(' '));
+}
+getSplit(str_val);
+*/
+
+/* Given a string S and two integers L and R. Print the characters in the range L to R of the string.
+NOTE: Assume zero based indexing. */
+
+// function getSubString(str, l, r){
+//   var ans = "";
+//   for(let i=l; i<=r; i++){
+//     ans += str[i];
+//   }
+//   return ans;
+// }
+
+// console.log(getSubString("Bhardwaj", 2, 6));
+
+// ======================================================================
+// Arrays - Non primitive data type
+// Iterating values of an array
+
+// let s1 = "Prakash";
+// let s2 = "Ashish";
+// let s3 = "Riya";
+// let s4 = "Adarsh";
+// let studentName = ["Prakash", "Adarsh", "Riya", "Ashish", "Jay", "Piyush"];
+
+/* For loop */
+// for(let i=0; i<studentName.length; i++){
+//   console.log(studentName[i]);
+// }
+
+/* for let of */
+// for( let name of studentName){
+//   console.log(name);
+// }
+
+/* let for in */
+// for(let name in studentName){
+//   console.log(name);
+// }
+
+// -------------------------------------------------
+// Array reference
+/*
+let arr1 = [1, 2, 3]; //is referring to memory loction - abc123
+let arr2 = arr1; //Is also pointing/referring to the same memory location
+
+//Shallow copy
+console.log("Arr1: "+ arr1);
+console.log("Arr2: "+ arr2);
+
+arr2.push(4);
+console.log("Updated arr1: " + arr1);
+console.log("Updated arr2: " + arr2);
+
+//Spread operator
+let arr3 = [...arr1];
+console.log("Arr3 - :" + arr3);
+
+arr3.push(5);
+console.log("Updated arr1: "+ arr1);
+console.log("Updated arr3: " + arr3);
+
+//Another Way
+let arr4 = [1, 2, 3, 4];
+let arr5 = [];
+for(let number of arr4){
+  arr5.push(number);
+}
+console.log("Arr4: "+ arr4);
+console.log("Arr5: "+ arr5);
+
+arr5.push(5);
+
+console.log("Updated Arr4: "+ arr4);
+console.log("Updated Arr5: " + arr5);
 */
